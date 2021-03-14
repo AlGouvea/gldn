@@ -1,3 +1,12 @@
 // Place all the styles related to the gldn controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: font-url('Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+h1{
+    font-family: 'Montserrat';
+}
