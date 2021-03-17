@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1 or /products/1.json
   def show
+    @product = Product.find(params[:id])
   end
 
   # GET /products/new
@@ -17,6 +18,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @product.icon.attach(params[:icon])
   end
 
   # POST /products or /products.json
@@ -63,6 +65,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:nome, :acessorio, :material)
+      params.require(:product).permit(:nome, :acessorio, :material, :price)
     end
 end

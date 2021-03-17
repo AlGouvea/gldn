@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   root "gldn#index"
   
   get "/gldn", to: "gldn#index"
+
   get "/about", to:"about#about"
   get "/sale", to:"sale#index"
+  get '/products/:id', to: 'product#show'
 
 end
