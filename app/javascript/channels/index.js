@@ -10,6 +10,40 @@ var time;
 var opacity;
 var s;
 
+//Setup quando a pagina carrega
+window.onload = function setup(){
+    //Banner e event listener
+    banner = document.getElementById("Banner1")
+    fake = document.getElementById("Banner2")
+    
+    banner.style.background = 'url("/assets/Banner0.jpg")'
+    fake.style.background = 'url("/assets/Banner0.jpg")'
+
+
+    banner.addEventListener("mouseenter", slideIn)
+    banner.addEventListener("mouseleave", slideOut)
+
+
+    //botoes e event listener
+    var btn1 = document.getElementById("left-btn")
+    var btn2 = document.getElementById("right-btn")
+
+    btn1.style.marginLeft = "-170px"
+    btn2.style.marginLeft = "100vw"
+
+    btn1.addEventListener("click", function back(){
+        transitionDown()
+    })
+
+    btn2.addEventListener("click", function fowards(){
+        transitionUp()
+    })
+}
+
+$(document).ready(function(){
+    setup()
+})
+
 
 //Funcao dos botoes do banner
 function slideIn(){
@@ -48,7 +82,6 @@ function slideOut(){
 
     btn1.style.marginLeft = "-150px"
     btn2.style.marginLeft = "100vw"
-    
 }
 
 
@@ -193,39 +226,10 @@ function transitionDown(){
     }
 }
 
-//Setup quando a pagina carrega
-window.addEventListener("load", function setup(){
-    //Banner e event listener
-    banner = document.getElementById("Banner1")
-    fake = document.getElementById("Banner2")
-
-    banner.style.background = 'url("/assets/Banner0.jpg")'
-    fake.style.background = 'url("/assets/Banner0.jpg")'
-
-    banner.addEventListener("mouseenter", slideIn)
-    banner.addEventListener("mouseleave", slideOut)
-
-
-    //botoes e event listener
-    var btn1 = document.getElementById("left-btn")
-    var btn2 = document.getElementById("right-btn")
-
-    btn1.style.marginLeft = "-170px"
-    btn2.style.marginLeft = "100vw"
-
-    btn1.addEventListener("click", function back(){
-        transitionDown()
-    })
-
-    btn2.addEventListener("click", function fowards(){
-        transitionUp()
-    })
-})
-
 //Funcao de troca das imagens
 function changeBanner(){
     transitionUp()
 }
 
-    //Tempo pra torcar
-    time = setInterval(changeBanner, 3000)
+//Tempo pra torcar
+time = setInterval(changeBanner, 3000)

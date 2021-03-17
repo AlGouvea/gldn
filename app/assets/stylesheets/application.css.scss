@@ -19,6 +19,95 @@
     src: font-url('Montserrat-ExtraLight.ttf') format('truetype');
 }
 
-title{
-    font-family: 'Times New Roman', Times, serif;
+head {
+    width: 100vw;
+    height: 25vh;
+    background-color: #222c3b;
+    display: block;
+    border-bottom: 5px solid #83919C;
+    top: 0;
+}
+
+a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #EBEAEB;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    color: #EBEAEB;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+li{
+    font-family: 'Montserrat';
+    margin-top: -70px;
+    font-size: 30px;
+    color: #83919C;
+    list-style-type: none;
+    text-decoration: none;
+    position: absolute;
+    width: 145px;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding-left: 2px;
+    margin-top: 3px;
+    background-color: #222c3b;
+    min-width: 300px;
+    height: 300px;
+    z-index: 2;
+    text-align: center;
+    border-bottom: 3px solid #83919C;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    position: absolute;
+    color: #83919C;
+    margin-left: -40%;
+    margin-top: 100px;
+}
+
+.link:hover{
+    color: #EBEAEB;
+    text-decoration: underline;
+}
+
+li:hover {
+    color: #EBEAEB;
+    text-decoration: underline;
+}
+
+li a:hover{
+    color: #EBEAEB;
+    text-decoration: underline;
+}
+
+li:hover .dropdown{
+    display: block;
+}
+
+.insta{
+    color: #83919C;
+    text-decoration: none;
+}
+
+.insta:hover{
+    color:#f0b845;
+    text-decoration: underline;
+}
+
+.footer{
+    height: 30vh;
+    width: 100vw;
 }
