@@ -42,6 +42,7 @@ window.onload = function setup(){
 
 $(document).ready(function(){
     setup()
+    alert("Foi")
 })
 
 

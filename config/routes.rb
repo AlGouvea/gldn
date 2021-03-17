@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   
   get "/gldn", to: "gldn#index"
   get "/about", to:"about#about"
-  get "/sale", to:"sale#about"
+  get "/sale", to:"sale#index"
 
 end
