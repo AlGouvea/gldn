@@ -1,0 +1,73 @@
+/* line 7, app/assets/stylesheets/gldn.scss */
+.banner {
+  width: 100vw;
+  height: 30vw;
+  margin-top: -7px;
+  margin-left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 17, app/assets/stylesheets/gldn.scss */
+.Fakebanner {
+  width: 100vw;
+  height: 30vw;
+  margin-top: -7px;
+  margin-left: -7px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 28, app/assets/stylesheets/gldn.scss */
+.frame {
+  width: 99%;
+  height: 29vw;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 7px 7px 7px 7px;
+  border: 3px solid #EBEAEB;
+}
+
+/* line 37, app/assets/stylesheets/gldn.scss */
+.line {
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  border-color: #EBEAEB;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 15%;
+  margin-top: 150px;
+  background-color: #83919C;
+  text-align: center;
+}
+
+/* line 49, app/assets/stylesheets/gldn.scss */
+.gallery {
+  overflow: hidden;
+}
+
+/* line 53, app/assets/stylesheets/gldn.scss */
+.portrait {
+  border: none;
+  transition: transform .5s ease;
+}
+
+/* line 58, app/assets/stylesheets/gldn.scss */
+.portrait:hover {
+  transform: scale(1.2);
+}
+
+/* line 62, app/assets/stylesheets/gldn.scss */
+.tag {
+  font-size: 40px;
+  height: 50px;
+  width: 200px;
+  margin-top: -30px;
+  position: absolute;
+  margin-left: calc(50% - 100px);
+  background: #EBEAEB;
+  font-family: 'Montserrat';
+  color: #83919C;
+}

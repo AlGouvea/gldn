@@ -2,14 +2,10 @@
 
 one:
   name: MyString
-  id: 1
   type: 
   material: MyString
-  price: 9.99
 
 two:
   name: MyString
-  id: 1
   type: 
   material: MyString
-  price: 9.99

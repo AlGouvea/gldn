@@ -1,0 +1,306 @@
+/* line 5, app/assets/stylesheets/about.scss */
+.tab {
+  height: 30px;
+  width: 30px;
+  display: block;
+  background-color: #EBEAEB;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: -10px;
+  border-top: 2px solid #83919c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 7, app/assets/stylesheets/gldn.scss */
+.banner {
+  width: 100vw;
+  height: 30vw;
+  margin-top: -7px;
+  margin-left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 17, app/assets/stylesheets/gldn.scss */
+.Fakebanner {
+  width: 100vw;
+  height: 30vw;
+  margin-top: -7px;
+  margin-left: -7px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 28, app/assets/stylesheets/gldn.scss */
+.frame {
+  width: 99%;
+  height: 29vw;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 7px 7px 7px 7px;
+  border: 3px solid #EBEAEB;
+}
+
+/* line 37, app/assets/stylesheets/gldn.scss */
+.line {
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  border-color: #EBEAEB;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 15%;
+  margin-top: 150px;
+  background-color: #83919C;
+  text-align: center;
+}
+
+/* line 49, app/assets/stylesheets/gldn.scss */
+.gallery {
+  overflow: hidden;
+}
+
+/* line 53, app/assets/stylesheets/gldn.scss */
+.portrait {
+  border: none;
+  transition: transform .5s ease;
+}
+
+/* line 58, app/assets/stylesheets/gldn.scss */
+.portrait:hover {
+  transform: scale(1.2);
+}
+
+/* line 62, app/assets/stylesheets/gldn.scss */
+.tag {
+  font-size: 40px;
+  height: 50px;
+  width: 200px;
+  margin-top: -30px;
+  position: absolute;
+  margin-left: calc(50% - 100px);
+  background: #EBEAEB;
+  font-family: 'Montserrat';
+  color: #83919C;
+}
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+}
+
+/* line 6, app/assets/stylesheets/scaffolds.scss */
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 16, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 19, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 22, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 29, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 32, app/assets/stylesheets/scaffolds.scss */
+div.field,
+div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 36, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 51, app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 60, app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/Montserrat-ExtraLight-3dd0e479b416dafdef71d0079a515414799299fccc75862ecf9c864310aa38b2.ttf) format("truetype");
+}
+
+/* line 22, app/assets/stylesheets/application.css.scss */
+head {
+  width: 100vw;
+  height: 25vh;
+  background-color: #222c3b;
+  display: block;
+  border-bottom: 5px solid #83919C;
+  top: 0;
+}
+
+/* line 31, app/assets/stylesheets/application.css.scss */
+a {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  color: #EBEAEB;
+}
+
+/* line 37, app/assets/stylesheets/application.css.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 41, app/assets/stylesheets/application.css.scss */
+body {
+  color: #EBEAEB;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 47, app/assets/stylesheets/application.css.scss */
+li {
+  font-family: 'Montserrat';
+  margin-top: -70px;
+  font-size: 30px;
+  color: #83919C;
+  list-style-type: none;
+  text-decoration: none;
+  position: absolute;
+  width: 145px;
+  display: inline-block;
+}
+
+/* line 59, app/assets/stylesheets/application.css.scss */
+.dropdown {
+  display: none;
+  position: absolute;
+  padding-left: 2px;
+  margin-top: 3px;
+  background-color: #222c3b;
+  min-width: 300px;
+  height: 300px;
+  z-index: 2;
+  text-align: center;
+  border-bottom: 3px solid #83919C;
+}
+
+/* line 72, app/assets/stylesheets/application.css.scss */
+.link {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  position: absolute;
+  color: #83919C;
+  margin-left: -40%;
+  margin-top: 100px;
+}
+
+/* line 81, app/assets/stylesheets/application.css.scss */
+.link:hover {
+  color: #EBEAEB;
+  text-decoration: underline;
+}
+
+/* line 86, app/assets/stylesheets/application.css.scss */
+li:hover {
+  color: #EBEAEB;
+  text-decoration: underline;
+}
+
+/* line 91, app/assets/stylesheets/application.css.scss */
+li a:hover {
+  color: #EBEAEB;
+  text-decoration: underline;
+}
+
+/* line 96, app/assets/stylesheets/application.css.scss */
+li:hover .dropdown {
+  display: block;
+}
+
+/* line 100, app/assets/stylesheets/application.css.scss */
+.insta {
+  color: #83919C;
+  text-decoration: none;
+}
+
+/* line 105, app/assets/stylesheets/application.css.scss */
+.insta:hover {
+  color: #f0b845;
+  text-decoration: underline;
+}
+
+/* line 110, app/assets/stylesheets/application.css.scss */
+.footer {
+  height: 30vh;
+  width: 100vw;
+}

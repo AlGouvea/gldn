@@ -20,22 +20,13 @@
 }
 
 head {
-    width: 100vw;
+    width: 110vw;
+    left: 0;
     height: 25vh;
     background-color: #222c3b;
     display: block;
     border-bottom: 5px solid #83919C;
     top: 0;
-}
-
-a{
-    font-family: 'Montserrat';
-    text-decoration: none;
-    color: #EBEAEB;
-}
-
-a:hover{
-    text-decoration: underline;
 }
 
 body{
@@ -64,7 +55,7 @@ li{
     background-color: #222c3b;
     min-width: 300px;
     height: 300px;
-    z-index: 2;
+    z-index: 1;
     text-align: center;
     border-bottom: 3px solid #83919C;
 }
@@ -73,24 +64,27 @@ li{
     text-decoration: none;
     font-family: 'Montserrat';
     position: absolute;
-    color: #83919C;
+    color: #EBEAEB;
     margin-left: -40%;
     margin-top: 100px;
 }
 
 .link:hover{
-    color: #EBEAEB;
+    color: #f0b845;
     text-decoration: underline;
+    background-color: #222c3b;
 }
 
 li:hover {
-    color: #EBEAEB;
+    color: #f0b845;
     text-decoration: underline;
+    background-color: #222c3b;
 }
 
 li a:hover{
-    color: #EBEAEB;
+    color: #f0b845;
     text-decoration: underline;
+    background-color: #222c3b;
 }
 
 li:hover .dropdown{
@@ -99,12 +93,32 @@ li:hover .dropdown{
 
 .insta{
     color: #83919C;
+    font-size: 30px;
     text-decoration: none;
 }
 
 .insta:hover{
     color:#f0b845;
+    background-color: #EBEAEB;
     text-decoration: underline;
+}
+
+.instaLink:link{
+    color: #EBEAEB;
+    text-decoration: none;
+    font-size: 15px;
+    transition: transform .5s ease;
+}
+
+.instaLink:visited{
+    color: #EBEAEB;
+    text-decoration: none;
+}
+
+.instaLink:hover{
+    background-color: #222c3b;
+    text-decoration: underline;
+    transform: scale(1.1)
 }
 
 .footer{
