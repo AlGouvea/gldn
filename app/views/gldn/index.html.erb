@@ -1,27 +1,28 @@
 <head>
-    <a class="instaLink" href="https://www.instagram.com/gldnsemijoias/" style="position: absolute; margin-left: calc(100% - 170px); margin-top: -235px">GLDNSEMIJOIAS<img src="assets/Instagram.png" style="height: 20px; position:absolute; margin-top: 0px; margin-left:calc(100% - 280px)"/> </a>
-    <a href="<%root_path%>"><img src="assets/logo.png" style="height: 80px; position:absolute ; top: 5vh; margin-left: calc(50% - 80px)"></a>
-    <li style="margin-left: calc(50% - 220px)">Brincos</a>
+    <a class="instaLink" href="https://www.instagram.com/gldnsemijoias/" style="position: absolute; margin-left: calc(100% - 190px); margin-top: -235px">GLDNSEMIJOIAS<img src="/assets/Instagram.png" style="height: 20px; position:absolute; margin-top: 0px; margin-left:calc(100% - 280px)"/> </a>
+    <a href="/"><img src="/assets/logo.png" style="height: 80px; position:absolute ; top: 5vh; margin-left: calc(50% - 80px)"></a>
+    <li class="option" style="margin-left: calc(50% - 220px)">Brincos</a>
+        <div class="dropdown">
+            <a class="link" href="<%=products_brincos_prata_path%>">Prata 925</a>
+            <a class="link" href="<%=products_brincos_ouro_path%>" style="margin-top: 200px">Ouro</a>
+        </div>
+    </li>
+    <li class="option" style="margin-left: calc(50% - 80px)">Aneis</a>
+        <div class="dropdown">
+            <a class="link" href="<%=products_aneis_prata_path%>">Prata 925</a>
+            <a class="link" href="<%=products_aneis_ouro_path%>" style="margin-top: 200px">Ouro</a>
+        </div>
+    </li>
+    <li class="option" style="margin-left: calc(50% + 20px)">Coleções</a>
         <div class="dropdown">
             <a class="link" href="#">Prata 925</a>
             <a class="link" href="#" style="margin-top: 200px">Ouro</a>
         </div>
     </li>
-    <li style="margin-left: calc(50% - 80px)">Aneis</a>
-        <div class="dropdown">
-            <a class="link" href="#">Prata 925</a>
-            <a class="link" href="#" style="margin-top: 200px">Ouro</a>
-        </div>
-    </li>
-    <li style="margin-left: calc(50% + 20px)">Coleções</a>
-        <div class="dropdown">
-            <a class="link" href="#">Prata 925</a>
-            <a class="link" href="#" style="margin-top: 200px">Ouro</a>
-        </div>
-    </li>
-    <li style="margin-left: calc(50% + 170px)"><a style="text-decoration: none; color: #83919C" href="#">Sale</a>
+        <li class="option" style="margin-left: calc(50% + 170px)"><a style="text-decoration: none; color: #83919C" href="#">Sale</a>
     </li>
 </head>
+
 
 <body>
     <div class="Fakebanner" id="Banner2">
@@ -35,11 +36,13 @@
         <h1 class="tag">Eu Quero</h1>
     </div>
 
-    <div class="gallery" style="margin-left: 15vw; margin-top:30vh;">
-        <img class="portrait" src="assets/Quero1.jpg" style="height: 50vh; margin-left: 2%">
-        <img class="portrait" src="assets/Quero2.jpg" style="height: 50vh; margin-left: 10%">
-        <img class="portrait" src="assets/Quero3.jpg" style="height: 50vh; margin-left: 10%">
-    </div>
+        <% @products.each do |product| %>
+            <ul class="gallery" style="margin-left: 15vw; margin-top:30vh;">
+            <%if product.quero == true%>
+                <%= render 'quero', product: product %>
+            <%end%>
+            </ul>
+        <%end%>
 
     <div class="line" style="margin-top: 150px">
         <h1 class="tag" style="width:750px; margin-left:calc(50% - 325px)">Siga nosso instagram <a class="insta" href="https://www.instagram.com/gldnsemijoias/">@GLDNSEMIJOIAS</a></h1> 

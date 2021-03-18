@@ -20,7 +20,7 @@
 }
 
 head {
-    width: 110vw;
+    width: 130vw;
     left: 0;
     height: 25vh;
     background-color: #222c3b;
@@ -35,7 +35,7 @@ body{
     overflow-x: hidden;
 }
 
-li{
+.option{
     font-family: 'Montserrat';
     margin-top: -70px;
     font-size: 30px;
@@ -80,19 +80,19 @@ li{
     background-color: #222c3b;
 }
 
-li:hover {
+.option:hover {
     color: #f0b845;
     text-decoration: underline;
     background-color: #222c3b;
 }
 
-li a:hover{
+.option a:hover{
     color: #f0b845;
     text-decoration: underline;
     background-color: #222c3b;
 }
 
-li:hover .dropdown{
+.option:hover .dropdown{
     display: block;
 }
 
@@ -133,7 +133,7 @@ li:hover .dropdown{
     background-color: #EBEAEB;
     position: absolute;
     margin-left: 0px;
-    margin-top: -10px;
+    margin-top: -35px;
     border-top: 2px solid #83919c;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     transition: transform .5s ease;
@@ -142,32 +142,4 @@ li:hover .dropdown{
 .tab:hover{
     background-color: #EBEAEB;
     transform: scale(1.2);
-}
-
-table{
-    color: #222c3b;
-    background-color: #EBEAEB;
-}
-
-p{
-    color: #222c3b;
-}
-
-.field{
-    color: #222c3b;
-    font-family: 'Montserrat';
-}
-
-.submitBtn{
-    border: none;
-    border-radius: 10px;
-    height: 25px;
-    width: 120px;
-    color: #EBEAEB;
-    background-color: #222c3b;
-}
-
-.footer{
-    height: 30vh;
-    width: 100vw;
 }

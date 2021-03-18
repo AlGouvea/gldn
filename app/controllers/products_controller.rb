@@ -21,6 +21,22 @@ class ProductsController < ApplicationController
     @product.icon.attach(params[:icon])
   end
 
+  def brincosPrata
+    @products = Product.all
+  end
+
+  def brincosOuro
+    @products = Product.all
+  end
+
+  def aneisPrata
+    @products = Product.all
+  end
+
+  def aneisOuro
+    @products = Product.all
+  end
+
   # POST /products or /products.json
   def create
     @product = Product.new(product_params)
@@ -65,6 +81,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:nome, :acessorio, :material, :price)
+      params.require(:product).permit(:nome, :acessorio, :material, :price, :quero, :destaque, :icon)
     end
 end

@@ -2,9 +2,87 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 table{
+    color: #222c3b;
+    background-color: #EBEAEB;
+}
+
+p{
+    color: #222c3b;
+}
+
+.field{
+    color: #222c3b;
+    font-family: 'Montserrat';
+}
+
+.submitBtn{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 120px;
+    color: #EBEAEB;
     background-color: #222c3b;
 }
 
-h1{
+.footer{
+    height: 30vh;
+    width: 100vw;
+}
+
+.product{
+    height: 13vh;
+    width: 20vw;
+    margin-top: -4px;
+    margin-left: calc(40vw - 20px);
+    border: 1px solid #222c3b;
+}
+
+.ouroName{
+    color: #f0b845;
+    margin-top: 0px;
+    font-size: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat';
+    background-color: #222c3b;
+}
+
+.prataName{
+    color: #83919C;
+    margin-top: 0px;
+    font-size: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat';
+    background-color: #222c3b;
+}
+
+.productMaterial{
     color: #222c3b;
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Montserrat';
+}
+
+.productPrice{
+    color: #222c3b;
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Montserrat';
+}
+
+.productImage{
+    height:20vw;
+    width:20vw;
+    margin-top: 50px;
+    margin-left: calc(40vw - 20px);
+    border: 1px solid #222c3b;
 }

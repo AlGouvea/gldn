@@ -48,12 +48,23 @@
 
 .gallery{
     overflow: hidden;
+    display: inline-block;
 }
 
 .portrait{
     border: none;
+    height: 40vh;
+    width: 14vw;
+    margin-left: -50px;
+    overflow: hidden;
     transition: transform .5s ease;
 }
+
+.portrait img{
+    height: 100%;
+    width: 100%;
+}
+
 
 .portrait:hover{
     transform: scale(1.2);

@@ -1,0 +1,2 @@
+module BrincosHelper
+end
