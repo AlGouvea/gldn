@@ -37,18 +37,28 @@
     </div>
 
         <% @products.each do |product| %>
-            <ul class="gallery" style="margin-left: 15vw; margin-top:30vh;">
+        <ul class="gallery" style="margin-left: 12vw; margin-top:30vh;">
             <%if product.quero == true%>
                 <%= render 'quero', product: product %>
             <%end%>
-            </ul>
+        </ul>
         <%end%>
 
-    <div class="line" style="margin-top: 150px">
-        <h1 class="tag" style="width:750px; margin-left:calc(50% - 325px)">Siga nosso instagram <a class="insta" href="https://www.instagram.com/gldnsemijoias/">@GLDNSEMIJOIAS</a></h1> 
+    <div class="line" style="margin-top: -100px">
+        <h1 class="tag">Destaque</h1>
     </div>
+
+        <% @products.each do |product| %>
+        <ul class="gallery" style="margin-left: 12vw; margin-top:calc(30vh - 200px);">
+            <%if product.destaque == true%>
+                <%= render 'quero', product: product %>
+            <%end%>
+        </ul>
+        <%end%>
 </body>
 
 <footer>
-
+    <div class="line" style="margin-top: 150px">
+        <h1 class="tag" style="width:750px; margin-left:calc(50% - 325px); border-bottom: 200px solid #EBEAEB">Siga nosso instagram <a class="insta" href="https://www.instagram.com/gldnsemijoias/">@GLDNSEMIJOIAS</a></h1> 
+    </div>
 </footer>

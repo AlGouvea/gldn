@@ -27,26 +27,16 @@
     </a>
 </head>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.nome %>
-</p>
-
-<p>
-  <strong>Type:</strong>
-  <%= @product.acessorio %>
-</p>
-
-<p>
-  <strong>Material:</strong>
-  <%= @product.material %>
-</p>
-
-<% if @product.icon.attached? %>
-  <img src="<%= (url_for(@product.icon))%>">
-<%else%>
-  <h1>Teste</h1>
-<%end%>
-
-<%= link_to 'Editar', edit_product_path(@product) %> |
-<%= link_to 'Voltar', products_path %>
+<body>
+  <%= image_tag url_for(@product.icon), class: "showImage"%>
+  <h1><%=@product.nome%></h1>
+  <h2>Preço: <%=@product.price%></h2>
+  <h2>Material: <%=@product.material%></h2>
+  <h2>Descrição:</h2>
+  <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</body>
+<footer>
+    <div class="line" style="margin-top: 300px">
+        <h1 class="tag" style="width:750px; margin-left:calc(50% - 325px); border-bottom: 200px solid #EBEAEB">Siga nosso instagram <a class="insta" href="https://www.instagram.com/gldnsemijoias/">@GLDNSEMIJOIAS</a></h1> 
+    </div>
+</footer>

@@ -1,12 +1,8 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-table{
-    color: #222c3b;
-    background-color: #EBEAEB;
-}
 
-p{
+table{
     color: #222c3b;
 }
 
@@ -30,11 +26,19 @@ p{
 }
 
 .product{
-    height: 13vh;
+    height: calc(13vh + 20vw);
     width: 20vw;
     margin-top: -4px;
     margin-left: calc(40vw - 20px);
-    border: 1px solid #222c3b;
+    border: 2px solid #222c3b;
+}
+
+.product:hover{
+    height: calc(13vh + 20vw);
+    width: 20vw;
+    margin-top: -4px;
+    margin-left: calc(40vw - 20px);
+    border: 2px solid #f0b845;
 }
 
 .ouroName{
@@ -63,7 +67,7 @@ p{
 
 .productMaterial{
     color: #222c3b;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-left: 15px;
     font-size: 30px;
     text-align: left;
@@ -72,7 +76,7 @@ p{
 
 .productPrice{
     color: #222c3b;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-left: 15px;
     font-size: 30px;
     text-align: left;
@@ -80,9 +84,60 @@ p{
 }
 
 .productImage{
-    height:20vw;
-    width:20vw;
-    margin-top: 50px;
-    margin-left: calc(40vw - 20px);
-    border: 1px solid #222c3b;
+    max-height:20vw;
+    max-width:20vw;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: calc(10vw - 120px);
+    background-position: center;
+    border: none;
+}
+
+.productImage:hover{
+    max-height:20vw;
+    max-width:20vw;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: calc(10vw - 120px);
+    background-position: center;
+    border: none;
+}
+
+.showImage{
+    max-height: 30vw;
+    margin-left: 20vw;
+    margin-top: -10px;
+    position: absolute;
+}
+
+h1{
+    width: 20vw;
+    text-align: left;
+    color: #222c3b;
+    font-family: 'Montserrat';
+    font-size: 35px;
+    margin-left: 43vw;
+    margin-bottom: 40px;
+}
+
+h2{
+    width: 20vw;
+    text-align: left;
+    color: #222c3b;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    margin-left: 43vw;
+    margin-bottom: 40px;
+}
+
+.text{
+    width: 25vw;
+    height: 17vw;
+    overflow: hidden;
+    text-align: left;
+    color: #222c3b;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    line-height: 110%;
+    margin-left: 43vw;
 }

@@ -1,5 +1,5 @@
-<img src="<%= url_for(product.icon)%>" class="productImage">
 <li class="product">
+  <%= link_to image_tag(url_for(product.icon), class: "productImage"), product_path(product)%>
   <div class="ouroName"><%= product.nome %></div>
   <div class="productPrice"><h5>R$<%= product.price %></h5></div>
   <div class="productMaterial"><h5>Material: <%= product.material %></h5></div>

@@ -34,18 +34,6 @@
     border: 3px solid #EBEAEB;    
 }
 
-.line{
-    position: absolute;
-    height: 3px;
-    width: 70%;
-    border-color: #EBEAEB;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 15%;
-    margin-top: 150px;
-    background-color: #83919C;
-    text-align: center;
-}
-
 .gallery{
     overflow: hidden;
     display: inline-block;
@@ -54,9 +42,10 @@
 .portrait{
     border: none;
     height: 40vh;
-    width: 14vw;
-    margin-left: -50px;
+    width: 15vw;
+    margin-left: 0px;
     overflow: hidden;
+    align-items: center;
     transition: transform .5s ease;
 }
 
@@ -68,16 +57,4 @@
 
 .portrait:hover{
     transform: scale(1.2);
-}
-
-.tag {
-    font-size: 40px;
-    height: 50px;
-    width: 200px;
-    margin-top: -15px;
-    position: absolute;
-    margin-left: calc(50% - 100px);
-    background: #EBEAEB;
-    font-family: 'Montserrat';
-    color: #83919C;
 }
